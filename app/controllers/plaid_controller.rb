@@ -2,6 +2,8 @@ class PlaidController < ApplicationController
   before_action :authenticate_user!
   protect_from_forgery with: :null_session # to handle CSRF protection for API requests
 
+  def index; end
+
   def create_link_token
     user = current_user
     link_token_create_request = Plaid::LinkTokenCreateRequest.new({

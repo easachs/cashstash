@@ -24,9 +24,21 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <main class="container mx-auto mt-28 px-5">
+    <main class="container mx-auto">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if current_user %>
+
+        <nav>
+          <ul>
+            <li><%= button_to "CashStash", root_path, method: :get %></li>
+          </ul>
+          <ul>
+            <li><%= button_to "Accounts", plaid_accounts_path, method: :get %></li>
+            <li><%= button_to "Logout", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </nav>
+      <% end %>
       <%= yield %>
     </main>
   </body>
