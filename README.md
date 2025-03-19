@@ -1,24 +1,15 @@
-# README
+# CashStash
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pitch
+CashStash is a Rails 8 application that uses the Plaid API to integrate with your bank account(s) to help offer insights and rcommendations for saving money based on your spending habits (recurring services, late fees, etc).
 
-Things you may want to cover:
+## MVP
+To do
 
-* Ruby version
+## Stretch
+To do
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## References
+- [Plaid Docs](https://plaid.com/docs/)
+- [Plaid Ruby](https://github.com/plaid/plaid-ruby)
+- [Adding Plaid to Your Rails Application](https://dev.to/duartemartins/adding-plaid-to-your-rails-application-2f8f)
